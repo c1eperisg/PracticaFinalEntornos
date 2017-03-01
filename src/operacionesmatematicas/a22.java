@@ -2,7 +2,7 @@ package operacionesmatematicas;
 
 /**
  *
- * @author piedad
+ * @author Edgar
  */
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,84 +11,84 @@ import java.io.InputStreamReader;
 public class a22 {
 
     /**
-     * @return the opc
+     * @return opc
      */
     public int getOpc() {
         return opc;
     }
 
     /**
-     * @param opc the opc to set
+     * @param opc
      */
     public void setOpc(int opc) {
         this.opc = opc;
     }
 
     /**
-     * @return the pi
+     * @return  pi
      */
     public double getPi() {
         return pi;
     }
 
     /**
-     * @param pi the pi to set
+     * @param pi
      */
     public void setPi(double pi) {
         this.pi = pi;
     }
 
     /**
-     * @return the r
+     * @return  r
      */
     public double getR() {
         return r;
     }
 
     /**
-     * @param r the r to set
+     * @param r
      */
     public void setR(double r) {
         this.r = r;
     }
 
     /**
-     * @return the v1
+     * @return  v1
      */
     public double getV1() {
         return v1;
     }
 
     /**
-     * @param v1 the v1 to set
+     * @param v1
      */
     public void setV1(double v1) {
         this.v1 = v1;
     }
 
     /**
-     * @return the h
+     * @return h
      */
     public double getH() {
         return h;
     }
 
     /**
-     * @param h the h to set
+     * @param h
      */
     public void setH(double h) {
         this.h = h;
     }
 
     /**
-     * @return the o
+     * @return  o
      */
     public String getO() {
         return o;
     }
 
     /**
-     * @param o the o to set
+     * @param o
      */
     public void setO(String o) {
         this.o = o;
@@ -101,9 +101,15 @@ public class a22 {
     private double h;
     private String o;
 
+    /**Constructor vacio
+     * 
+     */
     public a22() {
     }
-
+    /**Menu de navegacion
+     * 
+     * @throws IOException 
+     */
     public void funcion() throws IOException {
         int a, b, c, v;
         int s = 0;
@@ -157,19 +163,34 @@ public class a22 {
             setOpc(0);
         } while (s == 0);
     }
-
+/**Funciones de calculo
+ * 
+ * @param a
+ * @param b
+ * @param c
+ * @return 
+ */
     public static int volumenParalepipedo(int a, int b, int c) {
         return a * b * c;
     }
-
+/**Funciones de calculo
+ * 
+ * @return 
+ */
     public double volumenEsfera() {
         return (getR() * getR() * getR()) * getPi() * (4 / 3);
     }
-
+/**Funciones de calculo
+ * 
+ * @return 
+ */
     public double cilindroRecto() {
         return getPi() * (getR() * getR()) * getH();
     }
-
+/**Funciones de calculo
+ * 
+ * @return 
+ */
     public double ConoCircularRecto() {
         return (cilindroRecto()) / 3;
     }

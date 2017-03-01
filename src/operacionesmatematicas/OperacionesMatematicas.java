@@ -11,12 +11,12 @@ import java.io.InputStreamReader;
 
 /**
  *
- * @author piedad
+ * @author Edgar
  */
 public class OperacionesMatematicas {
 
     /**
-     * @param args the command line arguments
+     * @param args main menu
      * @throws java.io.IOException
      */
     public static void main(String[] args) throws IOException {

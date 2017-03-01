@@ -6,19 +6,19 @@ import java.io.InputStreamReader;
 
 /**
  *
- * @author piedad
+ * @author Edgar
  */
 public class Ecuacion2g {
 
     /**
-     * @return the a
+     * @return a
      */
     public static double getA() {
         return a;
     }
 
     /**
-     * @param aA the a to set
+     * @param para hacer set a
      */
     public static void setA(double aA) {
         if (aA == 0) {
@@ -29,28 +29,28 @@ public class Ecuacion2g {
     }
 
     /**
-     * @return the b
+     * @return b
      */
     public static double getB() {
         return b;
     }
 
     /**
-     * @param aB the b to set
+     * @param para hacer set b
      */
     public static void setB(double aB) {
         b = aB;
     }
 
     /**
-     * @return the c
+     * @return c
      */
     public static double getC() {
         return c;
     }
 
     /**
-     * @param aC the c to set
+     * @param para hacer set c
      */
     public static void setC(double aC) {
         c = aC;
@@ -59,12 +59,18 @@ public class Ecuacion2g {
     private static double b;               // Coeficiente de grado 1
     private static double c;               // Coeficiente de grado 0
 
+    /**Constructor
+     * 
+     */
     public Ecuacion2g() {
         a = 0.0;
         b = 0.0;
         c = 0.0;
     }
-
+    /**Menu principal
+     * 
+     * @throws IOException 
+     */
     public void funcion() throws IOException {
 
         double discriminante;   // Discriminante
@@ -83,7 +89,10 @@ public class Ecuacion2g {
         discriminate(discriminante);
 
     }
-
+    /**Calcula la discriminacion de las equaciones
+     * 
+     * @return discriminacion
+     */
     public static double discrminateCalc() {
         return getB() * getB() - 4 * getA() * getC();
     }
@@ -121,19 +130,35 @@ public class Ecuacion2g {
             System.out.println("Dos raices identicas, x1 = x2 = " + x1);
         }
     }
-
+/** Calculo parte imaginaria
+ * 
+ * @param discriminante
+ * @return 
+ */
     public static double pimag(double discriminante) {
         return Math.sqrt(-discriminante) / (2 * getA());
     }
-
+/**Calculo de la parte real
+ * 
+ * @return 
+ */
     public static double preal() {
         return (-getB()) / (2 * getA());
     }
-
+/**Funciones de analisis dentro de discriminate
+ * 
+ * @param discriminante
+ * @return 
+ */
     public static double x2(double discriminante) {
         return (-getB() - Math.sqrt(discriminante)) / (2 * getA());
     }
 
+   /** Funciones de analisis dentro de discriminate
+    * 
+    * @param discriminante
+    * @return 
+    */
     public static double x1(double discriminante) {
         return (-getB() + Math.sqrt(discriminante)) / (2 * getA());
     }

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package operacionesmatematicas;
 
 import org.junit.AfterClass;
@@ -12,7 +7,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author alumno
+ * @author edgar
  */
 public class Ecuacion2gTest {
     
@@ -28,7 +23,7 @@ public class Ecuacion2gTest {
     }
 
     /**
-     * Test of discrminateCalc method, of class Ecuacion2g.
+     * Test del metodo discriminateCalc, de la clase Equacion2g.
      */
     @Test
     public void testDiscrminateCalc() {
@@ -40,7 +35,7 @@ public class Ecuacion2gTest {
     }
 
     /**
-     * Test of discriminate method, of class Ecuacion2g.
+     * Test del metodo discriminate, de la clase Equacion2g.
      */
     @Test
     public void testDiscriminate() {
@@ -52,7 +47,7 @@ public class Ecuacion2gTest {
     }
 
     /**
-     * Test of pimag method, of class Ecuacion2g.
+     * Test del metodo pimag, de la clase Equacion2g.
      */
     @Test
     public void testPimag() {
@@ -65,7 +60,7 @@ public class Ecuacion2gTest {
     }
 
     /**
-     * Test of preal method, of class Ecuacion2g.
+     * Test del metodo preal, de la clase Equacion2g.
      */
     @Test
     public void testPreal() {
@@ -77,7 +72,7 @@ public class Ecuacion2gTest {
     }
 
     /**
-     * Test of x2 method, of class Ecuacion2g.
+     * Test del metodo X2, de la clase Equacion2g.
      */
     @Test
     public void testX2() {
@@ -90,7 +85,7 @@ public class Ecuacion2gTest {
     }
 
     /**
-     * Test of x1 method, of class Ecuacion2g.
+     * Test del metodo X1, de la clase Equacion2g.
      */
     @Test
     public void testX1() {

@@ -6,33 +6,33 @@ import java.io.InputStreamReader;
 
 /**
  *
- * @author piedad
+ * @author Edgar
  */
 public class Calculadora {
 
     /**
-     * @return the a
+     * @return a
      */
     public static int getA() {
         return a;
     }
 
     /**
-     * @param aA the a to set
+     * @param aA
      */
     public static void setA(int aA) {
         a = aA;
     }
 
     /**
-     * @return the b
+     * @return  b
      */
     public static int getB() {
         return b;
     }
 
     /**
-     * @param aB the b to set
+     * @param aB
      */
     public static void setB(int aB) {
         b = aB;
@@ -45,6 +45,11 @@ public class Calculadora {
         b = 0;
     }
 
+    /** Funciones principales y menu
+     * 
+     * @throws IOException 
+     */
+    
     public void funcion() throws IOException {
         String c;
 
@@ -92,7 +97,10 @@ public class Calculadora {
             }
         } while (s == 0);
     }
-
+/** Division
+ * @exception no puede divir entre 0
+ * @return 
+ */
     public static int dividir() {
         try {
             return getA() / getB();
@@ -102,15 +110,25 @@ public class Calculadora {
         }
 
     }
+/**Multiplicacion
+ * 
+ * @return 
+ */
 
     public static int multiplicar() {
         return getA() * getB();
     }
-
+/**Resta
+ * 
+ * @return 
+ */
     public static int resta() {
         return getA() - getB();
     }
-
+/**Suma
+ * 
+ * @return 
+ */
     public static int suma() {
         return getA() + getB();
     }

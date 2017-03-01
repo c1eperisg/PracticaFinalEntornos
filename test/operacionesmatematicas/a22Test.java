@@ -1,10 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package operacionesmatematicas;
-
 import java.io.BufferedReader;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -13,7 +7,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author alumno
+ * @author Edgar
  */
 public class a22Test {
     
@@ -30,7 +24,7 @@ public class a22Test {
 
 
     /**
-     * Test of volumenParalepipedo method, of class a22.
+     * Test del metodo VolumenParalepipedo, de la classe a22.
      */
     @Test
     public void testVolumenParalepipedo() {
@@ -45,7 +39,7 @@ public class a22Test {
     }
 
     /**
-     * Test of volumenEsfera method, of class a22.
+     * Test del metodo volumenEsfera, de la classe a22.
      */
     @Test
     public void testVolumenEsfera() {
@@ -58,7 +52,7 @@ public class a22Test {
     }
 
     /**
-     * Test of cilindroRecto method, of class a22.
+     * Test del metodo CilindroRecto, de la classe a22.
      */
     @Test
     public void testCilindroRecto() {
@@ -71,7 +65,7 @@ public class a22Test {
     }
 
     /**
-     * Test of ConoCircularRecto method, of class a22.
+     * Test del metodo ConoCircularRecto, de la classe a22.
      */
     @Test
     public void testConoCircularRecto() {

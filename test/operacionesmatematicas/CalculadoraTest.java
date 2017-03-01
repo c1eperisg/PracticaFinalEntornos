@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package operacionesmatematicas;
 
 import org.junit.AfterClass;
@@ -12,7 +7,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author alumno
+ * @author Edgar
  */
 public class CalculadoraTest {
 
@@ -28,7 +23,7 @@ public class CalculadoraTest {
     }
 
     /**
-     * Test of funcion method, of class Calculadora.
+     * Test del metodo funcion method, de la classe Calculadora.
      */
     @Test
     public void testFuncion() throws Exception {
